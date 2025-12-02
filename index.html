@@ -26,23 +26,44 @@
     <main>
         <section id="lewy">
 <h3>Zamówienie</h3>
+<form>
 <label for="plik">Wybierz obraz</label>
-<input type="image" name="plik" id="plik"><br>
+<input type="file" name="plik" id="plik"><br>
 <label for="kopia">Liczba Kopii</label>
 <input type="number" name="kopia" id="kopia">
-<input type="checkbox" name="checked" id="checked" checked>
-<input type="checkbox" name="checked2" id="checked2">
+
+<label>
+    <input type="radio" name="papier"checked>
+    Papier błyszczący
+  </label>
+  <br>
+  <label>
+    <input type="radio" name="papier">
+    Papier matowy
+<button id="przycisk" onclick="Skrypt()">Dodaj do koszyka</button>
+</form>
         </section>
         <section id="prawy">
             <nav>
-
+<ul>
+    <li> <a href="regulamin.html"> Regulamin</a></li>
+    <li> <a href="uslugi.html"> Usługi</a></li>
+    <li> <a href="https://pixabay.com"> Zdjęcia</a></li>
+</ul>
             </nav>
 
-            <section id="dol"></section>
+            <section id="dol">
+                <h3>
+                    Koszyk
+                </h3>
+                <div>
+
+                </div>
+            </section>
         </section>
     </main>
     <footer>
-
+<p>Autor strony: <em>Mateusz</em></p>
     </footer>
 </body>
 </html>
